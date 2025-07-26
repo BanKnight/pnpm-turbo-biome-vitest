@@ -1,0 +1,9 @@
+// .vscode/extensions.json
+{
+  "recommendations": [
+    "biomejs.biome",
+    "ms-vscode.vscode-typescript-next",
+    "csstools.postcss",
+    "bradlc.vscode-tailwindcss" // 如果你用 tailwind
+  ]
+}

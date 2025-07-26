@@ -1,0 +1,55 @@
+# =============================================================================
+# Dependencies
+# =============================================================================
+# Lockfiles should be committed, but the local dependency cache should not.
+node_modules
+.pnpm-store
+
+# =============================================================================
+# Build & Compilation Artifacts
+# =============================================================================
+# This applies to the root and all sub-packages (apps/*, packages/*)
+dist
+**/*.tsbuildinfo
+
+# =============================================================================
+# Caching
+# =============================================================================
+.turbo
+.vite
+
+# =============================================================================
+# Testing
+# =============================================================================
+# Vitest coverage reports
+coverage
+
+# =============================================================================
+# Logs
+# =============================================================================
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# =============================================================================
+# Environment Variables
+# =============================================================================
+# Never commit .env files with secrets!
+# It's a good practice to commit a .env.example file.
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# =============================================================================
+# OS & IDE Specific
+# =============================================================================
+.DS_Store
+.idea/
+
+# We want to commit team-level VSCode settings, but ignore user-level settings.
+# So, we ignore the whole folder, then explicitly un-ignore the files we want.
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

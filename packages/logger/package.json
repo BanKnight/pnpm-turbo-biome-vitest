@@ -1,0 +1,22 @@
+{
+  "name": "@my-template/logger",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "pnpm run build -- --watch",
+    "lint": "pnpm exec biome lint .",
+    "test": "vitest run --coverage",
+    "clean": "rm -rf dist .turbo"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@my-template/utils": "workspace:*"
+  }
+}

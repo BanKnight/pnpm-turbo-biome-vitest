@@ -1,0 +1,21 @@
+{
+  "name": "@my-template/cli",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "start": "node dist/index.js",
+    "dev": "pnpm run build && pnpm run start",
+    "lint": "pnpm exec biome lint .",
+    "clean": "rm -rf dist .turbo"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@my-template/logger": "workspace:*",
+    "@my-template/utils": "workspace:*"
+  }
+}
