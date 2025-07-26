@@ -1,4 +1,4 @@
-# 🚀 High-Performance TypeScript Monorepo Template
+# 🚀 pnpm-turbo-biome-vitest: High-Performance TypeScript Monorepo Template
 
 这是一个为追求极致性能和最佳开发体验而生的现代化 TypeScript Monorepo 模板。它整合了当前业界最前沿的工具链，旨在提供一个开箱即用、高度优化的开发环境，让你能专注于业务逻辑，而不是繁琐的工程配置。
 
