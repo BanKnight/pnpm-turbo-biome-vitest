@@ -10,7 +10,7 @@
     "dev": "pnpm run build -- --watch",
     "lint": "pnpm exec biome lint .",
     "test": "vitest run --coverage",
-    "clean": "rm -rf dist .turbo"
+    "clean": "rimraf dist .turbo"
   },
   "devDependencies": {
     "tsup": "^8.0.2",
