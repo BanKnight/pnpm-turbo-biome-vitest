@@ -1,0 +1,27 @@
+{
+  "name": "@my-template/core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "lint": "pnpm exec biome lint .",
+    "test": "vitest run --coverage",
+    "clean": "rimraf dist .turbo .cache"
+  },
+  "devDependencies": {
+    "tsup": "catalog:",
+    "@my-template/tsconfig": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

@@ -9,7 +9,7 @@
   "[typescript]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "[typescriptreact]": {
+  "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
   "eslint.enable": false

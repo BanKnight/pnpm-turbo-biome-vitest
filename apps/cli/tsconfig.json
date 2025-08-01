@@ -1,9 +1,17 @@
 {
-  "extends": "../../tsconfig.json",
-  "include": [
-    "src"
+  "extends": [
+    "@my-template/tsconfig/base.json"
   ],
   "compilerOptions": {
-    "outDir": "dist"
-  }
+    "baseUrl": "./",
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    },
+    "checkJs": true
+  },
+  "include": [
+    "src",
+  ]
 }

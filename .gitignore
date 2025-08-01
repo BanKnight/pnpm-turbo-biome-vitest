@@ -10,7 +10,7 @@ node_modules
 # =============================================================================
 # This applies to the root and all sub-packages (apps/*, packages/*)
 dist
-**/*.tsbuildinfo
+.cache
 
 # =============================================================================
 # Caching
